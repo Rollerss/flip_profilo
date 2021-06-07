@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import profileData from "./profileData.js";
+import "./styles.css";
+import CardHolder from "./components/CardHolder";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="content">
+      <div class="portfolio-items" id="portfolio">
+        {profileData.map((item, index) => {
+          return <CardHolder key={index} profileData={item} />;
+        })}
+      </div>
     </div>
   );
 }
