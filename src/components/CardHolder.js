@@ -1,5 +1,5 @@
 import Card from "./Card";
-import "../styles.css";
+import "../App.css";
 
 const CardHolder = ({ profileData }) => {
   return (

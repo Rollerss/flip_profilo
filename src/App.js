@@ -1,5 +1,5 @@
 import profileData from "./profileData.js";
-import "./styles.css";
+import "./App.css";
 import CardHolder from "./components/CardHolder";
 
 function App() {
